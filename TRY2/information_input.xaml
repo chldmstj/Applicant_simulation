@@ -1,0 +1,323 @@
+﻿<Page x:Class="TRY2.information_input"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRY2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="information_input"
+       Background="{StaticResource BasicProgramBackground}">
+
+    <Grid Height="700" Width="700">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="7" Grid.RowSpan="9" BorderBrush="Black" BorderThickness="2"/>
+        <Border Grid.Column="0" Grid.Row="4" Grid.RowSpan="9" BorderBrush="Black" BorderThickness="2"/>
+        <Border Grid.Row="4" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="5" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="6" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="7" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="8" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="9" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+        <Border Grid.Row="12" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="0" Grid.ColumnSpan="7"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        FontSize="25"
+                   FontWeight="Bold">
+        사용자 정보 입력</TextBlock>
+
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="4"
+       Style="{StaticResource Basicinfostyle}">
+        나이
+        </TextBlock>
+
+        <RadioButton GroupName="old" x:Name="s1" Grid.Column="1"
+        Grid.Row="4" Checked="s1_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}"
+                     >
+            23~25
+        </RadioButton>
+        <RadioButton GroupName="old" x:Name="s2" Grid.Column="2"
+        Grid.Row="4" Checked="s2_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            26~28
+        </RadioButton>
+        <RadioButton GroupName="old" x:Name="s3" Grid.Column="3"
+        Grid.Row="4" Checked="s3_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            29~31
+        </RadioButton>
+        <RadioButton GroupName="old" x:Name="s4" Grid.Column="4"
+        Grid.Row="4" Checked="s4_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            32~
+        </RadioButton>
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="5"
+        Style="{StaticResource Basicinfostyle}">
+        학점
+        </TextBlock>
+
+        <RadioButton GroupName="score" x:Name="o1" Grid.Column="1"
+        Grid.Row="5" Checked="o1_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            ~2.5
+        </RadioButton>
+        <RadioButton GroupName="score" x:Name="o2" Grid.Column="2"
+        Grid.Row="5" Checked="o2_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            2.5~3.0
+        </RadioButton>
+        <RadioButton GroupName="score" x:Name="o3" Grid.Column="3"
+        Grid.Row="5" Checked="o3_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            3.0~3.5
+        </RadioButton>
+        <RadioButton GroupName="score" x:Name="o4" Grid.Column="4"
+        Grid.Row="5" Checked="o4_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            3.5~4.0
+        </RadioButton>
+        <RadioButton GroupName="score" x:Name="o5" Grid.Column="5"
+        Grid.Row="5" Checked="o5_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            4.0~
+        </RadioButton>
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="6"
+        Style="{StaticResource Basicinfostyle}">
+        군필여부
+        </TextBlock>
+        <RadioButton GroupName="military" x:Name="m1" Grid.Column="1"
+        Grid.Row="6" Checked="m1_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            군필
+        </RadioButton>
+        <RadioButton GroupName="military" x:Name="m2" Grid.Column="2"
+        Grid.Row="6" Checked="m2_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            미필
+        </RadioButton>
+        <RadioButton GroupName="military" x:Name="m3" Grid.Column="3"
+        Grid.Row="6" Checked="m3_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            여자
+        </RadioButton>
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="7"
+        Style="{StaticResource Basicinfostyle}">
+        토익
+        </TextBlock>
+        <RadioButton GroupName="toeic" x:Name="t1" Grid.Column="1"
+        Grid.Row="7" Checked="t1_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            750~800
+        </RadioButton>
+        <RadioButton GroupName="toeic" x:Name="t2" Grid.Column="2"
+        Grid.Row="7" Checked="t2_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            800~850
+        </RadioButton>
+        <RadioButton GroupName="toeic" x:Name="t3" Grid.Column="3"
+        Grid.Row="7" Checked="t3_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            850~900
+        </RadioButton>
+        <RadioButton GroupName="toeic" x:Name="t4" Grid.Column="4"
+        Grid.Row="7" Checked="t4_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            900~950
+        </RadioButton>
+        <RadioButton GroupName="toeic" x:Name="t5" Grid.Column="5"
+        Grid.Row="7" Checked="t5_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            950~
+        </RadioButton>
+        <RadioButton GroupName="toeic" x:Name="t6" Grid.Column="6"
+        Grid.Row="7" Checked="t6_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            해당없음
+        </RadioButton>
+
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="8"
+        Style="{StaticResource Basicinfostyle}"
+                   Text="수상실적"/>
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="8"
+                  x:Name="prizecombobox"
+                  FontSize="15" Margin="1"
+                  SelectionChanged="Prizecombobox_SelectionChanged">
+
+            <ComboBoxItem Content="국내"
+                          FontSize="15"
+                          x:Name="indomestic"/>
+            <ComboBoxItem Content="국외"
+                          FontSize="15"
+                          x:Name="inforeign"/>
+            <ComboBoxItem Content="교내" 
+                          FontSize="15"
+                          IsSelected="True"
+                          x:Name="inschool"/>
+        </ComboBox>
+        <TextBox Grid.Column="2"
+                 Grid.Row="8" Margin="1"
+                 Text="수상 개수 입력"
+                 FontSize="12"
+                 x:Name="Prizenumbox"
+                 PreviewMouseLeftButtonDown="Prizenumbox_PreviewMouseLeftButtonDown"/>
+
+        <!--개수 칸에 마우스 놓고 클릭시 텍스트 초기화 이벤트-->
+
+        <Button Grid.Column="3"
+                Grid.Row="8"
+                x:Name="prizeButton"
+                Content="수상입력"
+                Click="PrizeButton_Click"
+                FontSize="15" Margin="1"/>
+
+        <Label Grid.Column="4"
+               Grid.ColumnSpan="3"
+               Grid.Row="8"
+               x:Name="PrizeLabel"
+               FontSize="11" Margin="2"
+               Background="Beige"
+               Content="국내:0국외:0:교내:0"/>
+
+
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="9"
+                   Grid.RowSpan="3"
+        Style="{StaticResource Basicinfostyle}">
+        자격증
+        </TextBlock>
+        <CheckBox x:Name="ccna" Grid.Column="1" Grid.Row="9" Checked="ccna_Checked_1"
+                  Style="{StaticResource BasicCheckBoxStyle}">
+            CCNA
+        </CheckBox>
+        <CheckBox x:Name="ccnp" Grid.Column="3" Grid.Row="9" Checked="ccnp_Checked_1"
+                  Style="{StaticResource BasicCheckBoxStyle}">
+            CCNP
+        </CheckBox>
+        <CheckBox x:Name="info0" Grid.Column="1" Grid.Row="10" Grid.ColumnSpan="2" Checked="info0_Checked_1"
+                  Style="{StaticResource BasicCheckBoxStyle}">
+            정보처리기능사
+        </CheckBox>
+
+        <CheckBox x:Name="info" Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="2" Checked="info_Checked_1"
+                  Style="{StaticResource BasicCheckBoxStyle}">
+            정보처리기사
+        </CheckBox>
+
+
+        <CheckBox x:Name="linux" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="2" Checked="linux_Checked_1"
+                  Style="{StaticResource BasicCheckBoxStyle}">
+            리눅스마스터
+        </CheckBox>
+        <ComboBox Grid.Column="3"
+                  Grid.Row="11"
+                  x:Name="linuxrank"
+                  FontSize="15"
+                  SelectionChanged="linuxrank_SelectionChanged_1">
+
+            <ComboBoxItem Content="1급"
+                          FontSize="15"
+                          x:Name="linux1"/>
+            <ComboBoxItem Content="2급"
+                          FontSize="15"
+                          x:Name="linux2"/>
+        </ComboBox>
+
+        <TextBlock Grid.Column="0"
+        Grid.Row="12"
+        Style="{StaticResource Basicinfostyle}">
+        프로젝트 경험
+        </TextBlock>
+
+        <RadioButton GroupName="project" x:Name="projecto" Grid.Column="1"
+        Grid.Row="12" Checked="projecto_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            있음
+        </RadioButton>
+        <RadioButton GroupName="project" x:Name="projectx" Grid.Column="2"
+        Grid.Row="12" Checked="projectx_Checked_1"
+                     Style="{StaticResource BasicRadioButtonStyle}">
+            없음
+        </RadioButton>
+
+        <ComboBox x:Name="projectCombobox"
+                  Grid.Column="3"
+                  Grid.ColumnSpan="3"
+                  Grid.Row="12" Margin="1"
+                  Visibility="Hidden">
+            <ComboBoxItem Content="소규모(반년 이하)"
+                          FontSize="15"
+                          x:Name="smallproject"/>
+            <ComboBoxItem Content="중규모(6개월~1년)"
+                          FontSize="15"
+                          x:Name="middleproject"/>
+            <ComboBoxItem Content="대규모(1년이상)"
+                          FontSize="15"
+                          x:Name="bigproject"/>
+
+
+        </ComboBox>
+
+        <Button Grid.Column="2"
+        Grid.Row="15"
+        Grid.ColumnSpan="2"
+        Click="Accept"
+                Content="입력 완료"
+                />
+
+
+        <Button Grid.Column="6"
+                Grid.Row="8"
+                Content="입력값초기화"
+                x:Name="resetbutton"
+                Click="Resetbutton_Click"/>
+
+        
+    </Grid>
+</Page>

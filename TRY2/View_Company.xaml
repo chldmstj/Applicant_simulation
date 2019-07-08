@@ -1,0 +1,86 @@
+﻿<Window x:Class="TRY2.View_Company"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TRY2"
+        xmlns:api="clr-namespace:TRY2.API"
+        xmlns:dbc="clr-namespace:TRY2.DBC"
+        mc:Ignorable="d"
+        Title="View_Company" Height="450" Width="1000">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="645*"/>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="lvControl" HorizontalAlignment="Left" Height="271" Margin="25,29,0,0" 
+                  VerticalAlignment="Top" Width="600"
+                  SelectionChanged="LvControl_SelectionChanged"
+                
+                  >
+            <ListView.View >
+                <GridView x:Name="list">
+                    <GridViewColumn x:Name="name" Header="회사명" Width="150"
+                                    DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn x:Name="title" Header="공고명" Width="450"
+                                    DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn x:Name="ID" Header="공고 번호" Width="0"
+                                    DisplayMemberBinding="{Binding Id}"
+                                    
+                                    />
+
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+
+        <Grid Background="Coral" Margin="650,26,9.6,20" RenderTransformOrigin="-0.593,0.634" Grid.ColumnSpan="2">
+
+            <StackPanel>
+
+                <TextBlock Background="Beige"
+                       TextWrapping="Wrap"
+                       FontFamily="Century Gothic"
+                           FontSize="25"
+                          
+                           FontWeight="UltraBlack"
+                          
+                       LineHeight="10"
+                TextAlignment="Center"
+                x:Name="TITLE" 
+                RenderTransformOrigin="0.477,0.269" Margin="10,10,10,10" Height="74">
+               회사명
+                </TextBlock>
+                <TextBlock Background="Beige"
+                       TextWrapping="Wrap"
+                      
+                           FontSize="10"
+                          
+                           FontWeight="UltraBlack"
+                          
+                       LineHeight="20"
+                TextAlignment="Left"    
+                x:Name="Content" 
+                RenderTransformOrigin="0.477,0.269" Margin="10,10,10.4,10" Height="256">
+                공고내용
+                </TextBlock>
+            </StackPanel>
+            <Button  HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="100" Height="20" Margin="126,0,108,26"
+               Background="Red" FontWeight="UltraBold"
+                     Foreground="White"
+                     Click="Button_Click">합격률 확인</Button>
+
+
+
+
+
+        </Grid>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="50" Margin="20,0,0,20" Content="뒤로가기"
+                Click="Button_Click_1"/>
+
+
+
+
+    </Grid>
+</Window>
